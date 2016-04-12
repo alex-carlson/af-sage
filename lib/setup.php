@@ -57,8 +57,8 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Primary', 'sage'),
     'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
+    'before_widget' => '<span class="widget %1$s %2$s">',
+    'after_widget'  => '</span>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
@@ -66,8 +66,8 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
+    'before_widget' => '<span class="widget %1$s %2$s">',
+    'after_widget'  => '</span>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
@@ -102,5 +102,6 @@ function assets() {
   }
 
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/skrollr.min.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

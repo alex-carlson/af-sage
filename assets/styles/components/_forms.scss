@@ -13,3 +13,28 @@
   @extend .btn;
   @extend .btn-default;
 }
+*:focus{
+  outline: 0;
+}
+input, textarea{
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: solid 1px #000;
+  width: 75%;
+  background: none;
+  font-family: $mainFont;
+
+  &:focus{
+    outline: 0;
+    border-color: $brand-primary;
+  }
+}
+.ajax-loader{
+  clear: both;
+  display: block;
+}
+form{
+  *{
+    margin: 5px auto !important;
+  }
+}

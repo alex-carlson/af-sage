@@ -19,9 +19,12 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "skrollr.js": {
+      "files": ["scripts/skrollr.min.js"]
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://localhost:8888/af-wp/"
   }
 }

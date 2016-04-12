@@ -1,0 +1,407 @@
+html, body{
+  background-color: $background-color;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.hidden{
+  display: none;
+}
+
+.ease{
+  transition: 0.25s;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.banner{
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+  float: left;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: monospace;
+  margin: 5px 0;
+}
+
+.success{
+  background-color: green;
+  color: darken(green, 25%);
+}
+
+.warn{
+  background-color: yellow;
+  color: darken(yellow, 25%);
+}
+
+.error{
+  background-color: red;
+  color: darken(red, 25%);
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.cta{
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.25s;
+  text-align: center;
+  margin: 5px;
+  font-size: 1.2em;
+
+  &:hover, &:active{
+    text-decoration: none;
+  }
+}
+
+.cta--brand{
+  @include gen-button($brand-primary);
+}
+
+.cta--white{
+  @include gen-button(#fff);
+}
+
+.cta--black{
+  @include gen-button(#000);
+}
+
+hr{
+  padding: 0;
+  margin: 30px 5px;
+  border: 0;
+  border-top: solid 1px set-color($background-color, 25%);
+  float: left;
+  width: 100%;
+}
+
+.border{
+  border: solid 1px $footer-color;
+  border-radius: 5px;
+}
+
+.shadow{
+  box-shadow: $shadow;
+}
+
+.block{
+  display: block;
+}
+
+.left{
+  float: left;
+}
+
+.space{
+  padding: 6% 3%;
+}
+
+.right{
+  float: right;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+// Column Widths
+
+.half{
+  width: 50%;
+}
+
+.full{
+  width: 100%;
+}
+
+.third{
+  width: 33.33%;
+}
+
+.fifth{
+  width: 18%;
+}
+
+.two-third{
+  width:66.66%;
+}
+
+.visor{
+  background: radial-gradient(50% 139%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,0.8) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20% 0;
+}
+
+.hero{
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+
+  & > span{
+    margin: 0;
+  }
+}
+
+.highlight{
+  box-sizing: border-box;
+  padding: 25px 0;
+
+  a{
+    display: flex;
+    &:hover{
+      img{
+        opacity: 0.6;
+      }
+    }
+    img{
+      border-radius: 9999px;
+      width: 150px;
+      height: 150px;
+      transition: 0.25s;
+    }
+    & > *{
+      float: left;
+      display: block;
+      padding: 2%;
+    }
+  }
+}
+
+aside{
+  float: right;
+  width: 22%;
+  background-color: set-color($background-color, 5%);
+  padding: 15px;
+  box-sizing: border-box;
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section{
+  margin-top: 60px;
+}
+
+.divider{
+  height: 100vh;
+  background-size: cover;
+}
+
+main{
+  margin-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+
+  .container{
+    background-color: set-color-i($background-color, 10%);
+  }
+
+  ul, ol{
+    margin-left: 20px;
+    padding: 0 1em;
+    font-family: $paragraphFont;
+    font-weight: 400;
+    font-size: 1.2em;
+
+    li{
+      padding: 2px;
+      line-height: 1.8em;
+    }
+  }
+
+  ul{
+    list-style-type: circle;
+  }
+  ol{
+    list-style-type: decimal;
+  }
+}
+
+// Tablet Breakpoint
+
+@media (max-width: 900px){
+  html{
+    font-size: 70%;
+  }
+  .visor{
+    padding: 50% 20%;
+  }
+  input, textarea{
+    width: 100%;
+  }
+  .half, .third, .two-third, .fifth, main .teaser li{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  main{
+    max-width: 100%;
+    margin: 50px 0;
+
+    .container{
+      padding: 0 3em;
+    }
+
+    aside{
+      display: none;
+    }
+
+    & > *{
+      width: 100%;
+    }
+
+    .teaser{
+      border: solid 1px set-color($background-color, 10%);
+      border-radius: 5px;
+      margin-bottom: 50px;
+      padding: 0;
+
+      li{
+
+        border-right: 0;
+        margin-bottom: 0;
+        position: relative;
+
+        &:nth-of-type(even){
+          background-color: set-color($background-color, 5%);
+
+          &:hover{
+            background-color: set-color($background-color, 5%);
+          }
+        }
+
+        &:hover{
+          background-color: inherit;
+        }
+        h3, p{
+          float: right;
+          text-align: right;
+          width: 80%;
+          margin: 5px 0;
+          box-sizing: border-box;
+          display: block;
+        }
+        p{
+          clear: right;
+        }
+        img{
+          width: 19%;
+          float: left;
+        }
+      }
+    }
+  }
+  .border{
+    border: 0;
+    border-radius: 0;
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  header{
+    height: 80px !important;
+    background-color: $brand-primary !important;
+
+    .container{
+      .nav-primary{
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        z-index: 9999;
+        padding: 0;
+        height: auto;
+        background-color: $brand-primary !important;
+
+        .menu-main-nav-container{
+          ul{
+            display: block;
+
+            li{
+              width: 100%;
+              max-width: 9999px;
+
+              a{
+                width: 100%;
+                top: 0;
+                transform: translateY(0%);
+              }
+
+              .submenu{
+                height: auto;
+                opacity: 1;
+                width: 100%;
+                display: none;
+
+                li{
+
+                  a{
+                    background-color: set-color-i(#fff, 6%);
+                    border-top: 0;
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+      .menuToggle{
+        display: block;
+      }
+    }
+  }
+  form{
+    padding: 1%;
+
+    p{
+      max-width: 100%;
+    }
+  }
+  footer{
+    & > *{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      float: left;
+
+      p{
+        margin: 0;
+      }
+    }
+  }
+}

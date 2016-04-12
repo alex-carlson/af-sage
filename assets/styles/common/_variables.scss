@@ -5,5 +5,26 @@ $icon-font-path:        "../fonts/";
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
-// Colors
-$brand-primary:         #27ae60;
+// Background Color
+$background-color: #fff;
+
+// Text Color
+$text-color: #333333;
+
+// Link, and Hover Effect Color
+$brand-primary: #660F19;
+
+// Footer Color
+$footer-color: #dddddd;
+
+// Default Font Make sure fallback is included  (aka. serif, sans-serif, etc.) so that you don't have invisible fonts until the preferred on loads.
+//$mainFont: "proxima-nova",sans-serif;
+$mainFont: "kepler-std-display", "georgia",sans-serif;
+
+$paragraphFont: "kepler-std-semicondensed",serif;
+
+// This is the width of the content, default is 80%.  Lower % gives you a narrower layout.
+$maxWidth: 80%;
+
+// All Dropshadows pull from this.
+$shadow: 0px 5px 15px darken($background-color, 20%);

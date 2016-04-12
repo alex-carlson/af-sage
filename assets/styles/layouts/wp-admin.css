@@ -1,0 +1,40 @@
+/*h1, h2, h3{
+  color: #e1e0e0;
+}
+
+a{
+  color: #7ac9df;
+}
+
+body, body, #wpcontent, .welcome-panel, #wp-content-editor-tools{
+  background-color: #333;
+  color: #fff;
+}
+table.widefat, #titlediv #title{
+  background: #333;
+  border: solid 1px #000;
+  color: #fff;
+}
+.widefat *{
+  background: #5c5c5c;
+  color: #fff;
+}
+.widefat ol, .widefat p, .widefat tfoot tr td, .widefat tfoot tr th, .widefat thead tr td, .widefat thead tr th, .widefat ul, .widefat td, .widefat th{
+  color: #fff;
+}
+.postbox{
+  background: #242424;
+  border: solid 1px #000;
+  color: #fff;
+}
+.postbox .hndle{
+  border-bottom: 1px solid #424242;
+}
+#dashboard_right_now .sub{
+  background: #333;
+  color: #fff;
+}
+.wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active, .wp-core-ui .button, .wp-core-ui .button-secondary{
+  background: #000;
+  color: #7ac9df;
+}*/

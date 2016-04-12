@@ -15,7 +15,8 @@ $sage_includes = [
   'lib/setup.php',     // Theme setup
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+  'lib/customizer.php', // Theme customizer
+  // 'lib/admin-styles.php', // Admin panel CSS
 ];
 
 foreach ($sage_includes as $file) {
@@ -25,4 +26,11 @@ foreach ($sage_includes as $file) {
 
   require_once $filepath;
 }
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+
+}
+
 unset($file, $filepath);
