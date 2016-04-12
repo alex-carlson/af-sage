@@ -331,7 +331,6 @@ main{
   }
   header{
     height: 80px !important;
-    background-color: $brand-primary !important;
 
     .container{
       .nav-primary{
@@ -344,20 +343,23 @@ main{
         z-index: 9999;
         padding: 0;
         height: auto;
-        background-color: $brand-primary !important;
 
         .menu-main-nav-container{
           ul{
             display: block;
+            background-color: set-color($footer-color, 5%);
 
             li{
               width: 100%;
-              max-width: 9999px;
+              max-width: 100%;
+
+              &:nth-child(odd){
+                background-color: set-color($footer-color, 10%);
+              }
 
               a{
                 width: 100%;
-                top: 0;
-                transform: translateY(0%);
+                padding: 15px 0;
               }
 
               .submenu{
@@ -369,7 +371,6 @@ main{
                 li{
 
                   a{
-                    background-color: set-color-i(#fff, 6%);
                     border-top: 0;
                   }
 

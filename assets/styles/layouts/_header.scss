@@ -2,22 +2,18 @@
 
 .current-menu-item{
   a{
-    background-color: set-color($brand-primary, 15%);
+    background-color: set-color($footer-color, 15%);
 
     &:hover{
-      background-color: set-color($brand-primary, 20%);
+      background-color: set-color($footer-color, 20%);
     }
   }
 }
 
 header{
   width: 100%;
-  background: $brand-primary;
-  //background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.50) 100%);
+  background: $footer-color;
   margin-bottom: 40px;
-  // border-top: solid 1px set-color-i($header-color, 5%);
-  // border-bottom: solid 1px set-color($header-color, 15%);
-  //box-shadow: $shadow;
   z-index: 9999;
   position: fixed;
   top: 0;
@@ -28,7 +24,7 @@ header{
 
     .menuToggle{
       cursor: pointer;
-      color: $background-color;
+      color: set-color($background-color, 50%);
       position: relative;
       top: 22px;
       right: 5px;
@@ -51,7 +47,7 @@ header{
         width: 40px;
         height: 5px;
         border-radius: 3px;
-        background-color: $background-color;
+        background-color: set-color($background-color, 50%);
         left: 15px;
         content: '';
         position: absolute;
@@ -148,14 +144,14 @@ header{
               text-align: center;
               box-sizing: border-box;
               transition: 0.25s;
-              color: set-color($brand-primary, 75%);
+              color: set-color($footer-color, 55%);
               height: 100%;
               font-size: 16px;
               font-family: $paragraphFont;
               vertical-align: middle;
 
               &:hover{
-                background-color: set-color($brand-primary, 15%);
+                background-color: set-color($footer-color, 5%);
               }
             }
 

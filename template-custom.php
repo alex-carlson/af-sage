@@ -51,7 +51,8 @@
 
     <?php } ?>
 
-    <div class="container center-text">
+    <div class="container">
+      <hr>
       <h1>Blog Posts</h1>
       <hr>
       <?php
