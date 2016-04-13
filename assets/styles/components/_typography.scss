@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6{
 	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
 	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
 	font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+  display: inline-block;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, label{
@@ -147,17 +149,17 @@ a{
   font-family: $paragraphFont;
 
   &:hover{
-    color: darken($brand-primary, 25%);
+    color: set-color-i($brand-primary, 50%);
     text-decoration: none;
   }
 }
 
 article{
   a:not(.cta){
-    @include link-underline($background-color, $brand-primary, set-color($brand-primary, 50%));
+    @include link-underline(set-color-i($background-color, 10%), $brand-primary, set-color-i($background-color, 10%));
 
     &:hover{
-      color: darken($brand-primary, 25%);
+      color: set-color($brand-primary, 25%);
       background-size: 1px 2px;
       background-position: 0 93%;
     }

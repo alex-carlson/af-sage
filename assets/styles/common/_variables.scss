@@ -6,16 +6,16 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Background Color
-$background-color: #fff;
+$background-color: #eeeeee;
 
 // Text Color
-$text-color: #000;
+$text-color: #222222;
 
 // Link, and Hover Effect Color
-$brand-primary: #660F19;
+$brand-primary: #44bd6e;
 
 // Footer Color
-$footer-color: #D8D8D8;
+$footer-color: #fff;
 
 // Default Font Make sure fallback is included  (aka. serif, sans-serif, etc.) so that you don't have invisible fonts until the preferred on loads.
 //$mainFont: "proxima-nova",sans-serif;
@@ -27,4 +27,5 @@ $paragraphFont: "kepler-std-semicondensed",serif;
 $maxWidth: 80%;
 
 // All Dropshadows pull from this.
-$shadow: 0px 5px 15px darken($background-color, 20%);
+$shadow: 0 0px 12px rgba(0,0,0,0.16), 0 0px 12px rgba(0,0,0,0.23);
+$transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;

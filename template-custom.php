@@ -11,6 +11,7 @@
       <span class="visor">
         <h1 contenteditable class="text--white hero-header"><?php the_sub_field('title'); ?></h1><br>
         <a href="<?php the_sub_field('button_link'); ?>" class="cta cta--white"><?php the_sub_field('button_text'); ?></a>
+        <span class="banner bottom secondary"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
       </span>
     </div>
   <?php } ?>
