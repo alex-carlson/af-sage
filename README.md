@@ -4,11 +4,7 @@
 
 *****
 
-- [Intro](#Intro)
-- [Installation](#Installation)
-- [How to make tweaks](#How-to-make-tweaks)
-- [Adding Dependencies](#Adding-dependencies)
-- [Templates](#Templates)
+[Intro](#intro) - [Installation](#installation) - [How to Make Tweaks](#how-to-make-tweaks) - [Adding Dependencies](#adding-dependencies) - [Templates](#templates)
 
 *****
 
