@@ -1,3 +1,3 @@
-<aside class="">
+<div class="wrapper">
   <?php dynamic_sidebar('sidebar-primary'); ?>
-</aside>
+</div>

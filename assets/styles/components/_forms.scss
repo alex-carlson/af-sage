@@ -22,13 +22,13 @@ input, textarea{
   border: solid 1px #000;
   width: 50%;
   background: none;
-  font-family: $mainFont;
 
   &:focus{
     outline: 0;
     border-color: $brand-primary;
   }
 }
+
 .ajax-loader{
   clear: both;
   display: block;

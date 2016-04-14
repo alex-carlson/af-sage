@@ -19,9 +19,9 @@ $footer-color: #fff;
 
 // Default Font Make sure fallback is included  (aka. serif, sans-serif, etc.) so that you don't have invisible fonts until the preferred on loads.
 //$mainFont: "proxima-nova",sans-serif;
-$mainFont: "kepler-std-display", "georgia",sans-serif;
+$mainFont: "kepler-std-display", "georgia",serif;
 
-$paragraphFont: "kepler-std-semicondensed",serif;
+$paragraphFont: "proxima-nova",sans-serif;
 
 // This is the width of the content, default is 80%.  Lower % gives you a narrower layout.
 $maxWidth: 80%;

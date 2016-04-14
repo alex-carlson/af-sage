@@ -20,13 +20,13 @@
 
       <?php if( get_row_layout() == 'copy' ): ?>
 
-        <article class="post container shadow-z-1">
+        <article class="post-spacing wrapper shadow-z-1">
           <?php the_sub_field('content'); ?>
         </article>
 
       <?php elseif( get_row_layout() == 'highlight' ): ?>
 
-        <div class="container shadow-z-1">
+        <div class="wrapper shadow-z-1 cf">
 
           <?php while(the_repeater_field('item')) { ?>
 
@@ -52,10 +52,8 @@
 
     <?php } ?>
 
-    <div class="container shadow-z-1">
-      <hr>
+    <div class="wrapper shadow-z-1">
       <h1>Blog Posts</h1>
-      <hr>
       <?php
 
 
@@ -66,13 +64,12 @@
           <article class="">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <?php the_excerpt(); ?>
-            <hr>
           </article>
       <?php endforeach;
       wp_reset_postdata();?>
     </div>
 
-    <div class="container center-text shadow-z-1">
+    <div class="wrapper center-text shadow-z-1">
       <?php echo do_shortcode( '[contact-form-7 id="133" title="Contact form 1"]' ); ?>
     </div>
     <?php get_template_part('templates/page', 'footer'); ?>

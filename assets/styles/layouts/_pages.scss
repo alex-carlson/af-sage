@@ -22,6 +22,10 @@ html, body{
     clear: both;
 }
 
+.sidebar-primary .main{
+  padding-right: 0;
+}
+
 .banner{
   text-align: center;
   width: 100%;
@@ -181,7 +185,7 @@ hr{
 }
 
 .hero{
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   background-size: cover;
   position: relative;
 
@@ -227,21 +231,17 @@ hr{
 aside{
   float: right;
   width: 22%;
-  background-color: set-color($background-color, 5%);
-  padding: 15px;
   box-sizing: border-box;
+  margin-top: 80px;
+
+  &.sidebar{
+    padding: 0;
+  }
 
   ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-    li{
-
-      a{
-        text-decoration: none;
-      }
-    }
   }
 }
 
@@ -254,17 +254,19 @@ section{
   background-size: cover;
 }
 
+.wrapper{
+  background-color: set-color-i($background-color, 10%);
+  margin-top: 30px;
+  border-radius: 3px;
+  padding: 50px;
+  margin: 50px;
+}
+
 main{
   margin-bottom: 50px;
   margin: 0 auto;
+  margin-top: 80px;
   position: relative;
-
-  .container{
-    background-color: set-color-i($background-color, 10%);
-    margin-top: 30px;
-    border-radius: 3px;
-    padding: 50px;
-  }
 
   ul, ol{
     margin-left: 20px;
@@ -287,6 +289,10 @@ main{
   }
 }
 
+.post-spacing{
+  margin-top: 100px;
+}
+
 // Tablet Breakpoint
 
 @media (max-width: 900px){
@@ -304,17 +310,22 @@ main{
     max-width: 100%;
     margin-bottom: 50px;
   }
+  .wrapper{
+    padding: 0 3em;
+    margin: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  aside{
+    &.sidebar{
+      width: 100%;
+      float: right;
+      margin: 0;
+    }
+  }
   main{
     max-width: 100%;
-    margin: 50px 0;
-
-    .container{
-      padding: 0 3em;
-    }
-
-    aside{
-      display: none;
-    }
+    margin: 80px 0 0 0;
 
     & > *{
       width: 100%;

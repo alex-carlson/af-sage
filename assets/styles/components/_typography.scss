@@ -110,7 +110,7 @@ p{
   line-height: 1.6em;
   font-size: 1.2em;
   max-width: 800px;
-  font-weight: 300;
+  font-weight: 500;
   font-family: $paragraphFont;
   margin: 1em 0;
   font-kerning: normal;
@@ -145,16 +145,14 @@ a{
   color: $brand-primary;
   position: relative;
   font-weight: 400;
-  text-decoration: none;
   font-family: $paragraphFont;
 
   &:hover{
-    color: set-color-i($brand-primary, 50%);
-    text-decoration: none;
+    color: set-color($brand-primary, 25%);
   }
 }
 
-article{
+article, .sidebar{
   a:not(.cta){
     @include link-underline(set-color-i($background-color, 10%), $brand-primary, set-color-i($background-color, 10%));
 
